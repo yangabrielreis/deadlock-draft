@@ -42,6 +42,7 @@ button {
   padding: 10px;
   border-radius: 10px;
   width: 50%;
+  bottom: 0;
 }
 
 .icon-button {
@@ -66,9 +67,9 @@ button {
   width: 100px; 
   margin-right: 20px; 
   margin-left: 30px;
-  
   padding: 10px;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 .selected-heroes-box-right {
@@ -82,29 +83,57 @@ button {
   width: 100px; 
   margin-right: 20px; 
   margin-left: 30px;
-  
   padding: 10px;
   border-radius: 10px;
+  font-size: 12px;
 }
 
 .selected-heroes-box-top {
+  position: absolute;
+  top: 0.1%;
+  left: 42%;
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 36%;
-  transform: translateX(-50%);
+  align-items: center;
   flex-direction: row;
-  align-items: left;
-  width: 100px; 
-  margin-right: 20px; 
-  margin-left: 30px;
-  
+  justify-content: flex-start;
   padding: 10px;
-  border-radius: 10px;
+  font-size: 12px;
 }
 
 .selected-hero img{
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  margin: 19px;
+}
+
+.selected-hero-top img{
+  width: 75px;
+  height: 75px;
   margin: 5px;
+}
+
+.texto-banido{
+  color: rgb(243, 117, 117);
+  margin-top: 0%;
+  font-size: 20px;
+}
+
+.back-button{
+  width: 100px;
+  height: 50px;
+  margin-left: 300px;
+}
+
+.help-button{
+  width: 100px;
+  height: 50px;
+  margin-right: 300px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
 }

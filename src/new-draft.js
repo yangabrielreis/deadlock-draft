@@ -10,19 +10,19 @@ function NewDraft() {
                     <h1>Copie um link para acessar o draft:</h1>
                     <div>
                         <h2 href='#'>Time Ambar</h2>
-                        <button onClick={() => copiarLink('Time Ambar')}>
+                        <button onClick={() => copiarLink('localhost:3000/true-draft')}>
                         Copiar Link
                         </button>
                     </div>
                     <div>
                         <h2>Time Safira</h2>
-                        <button onClick={() => copiarLink('Time Safira')}>
+                        <button onClick={() => copiarLink('localhost:3000/true-draft')}>
                         Copiar Link
                         </button>
                     </div>
                     <div>
                         <h2>Espectador</h2>
-                        <button onClick={() => copiarLink('Espectador')}>
+                        <button onClick={() => copiarLink('localhost:3000/true-draft')}>
                         Copiar Link
                         </button>
                     </div>

@@ -48,14 +48,20 @@ function TrueDraft() {
 
     return (
         <div className="App-header">
+            <div className="texto-banido" style={{ marginTop: '5px' }}>
+                <h3>Banimentos</h3>
+            </div>
             <div className="selected-heroes-box-top">
                 {selectedHeroesTop.map((heroIcon, index) => (
-                    <div key={index} className="selected-hero">
+                    <div key={index} className="selected-hero-top">
                         <img src={heroIcon} alt={`Hero ${index}`} />
                     </div>
                 ))}
+    
             </div>
+            
             <div className="selected-heroes-box-left">
+                <h3>Time Ambar</h3>
                 {selectedHeroesLeft.map((heroIcon, index) => (
                     <div key={index} className="selected-hero">
                         <img src={heroIcon} alt={`Hero ${index}`} />
@@ -63,6 +69,7 @@ function TrueDraft() {
                 ))}
             </div>
             <div className="selected-heroes-box-right">
+                <h3>Time Safira</h3>
                 {selectedHeroesRight.map((heroIcon, index) => (
                     <div key={index} className="selected-hero">
                         <img src={heroIcon} alt={`Hero ${index}`} />
@@ -80,7 +87,20 @@ function TrueDraft() {
                     </button>
                 ))}
             </div>
+            <div className="button-container">
+            <button 
+            className="back-button" 
+            onClick={() => window.location.href = '/'}>
+            Voltar
+            </button>
+            <button 
+            className="help-button" 
+            onClick={() => alert('Cada time alterna banindo 2 personagens, estes herois banidos nao podem ser escolhidos por ambas as equipes. Apos isso cada equipe alterna selecionando personagens ate cada equipe ter 6. Quando uma equipe seleciona um personagem ele nao pode ser selecionado pela outra e vice-versa.')}>
+            Ajuda
+            </button>
+            </div>
         </div>
+        
     );
 }
 
