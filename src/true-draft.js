@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
-import copiarLink from './new-draft';
 
-// Utility function to import all icons
+
 function importAll(r) {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
@@ -10,8 +9,7 @@ function importAll(r) {
 }
 
 const heroIcons = importAll(require.context('./images/heroIcons', false, /\.(png|jpe?g|svg)$/));
-const blankImage = require('./images/Blank.png'); // Import the blank image
-
+const blankImage = require('./images/Blank.png'); 
 function TrueDraft() {
     const [selectedHeroesTop, setSelectedHeroesTop] = useState([]);
     const [selectedHeroesLeft, setSelectedHeroesLeft] = useState([]);
@@ -21,7 +19,7 @@ function TrueDraft() {
 
     const handleIconClick = (iconName) => {
         const heroIcon = availableHeroIcons[iconName];
-        if (heroIcon === blankImage) return; // Do nothing if the blank image is selected
+        if (heroIcon === blankImage) return; 
 
         if (selectedHeroesTop.length < 4) {
             setSelectedHeroesTop([...selectedHeroesTop, heroIcon]);
