@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function NewDraft() {
@@ -10,20 +11,25 @@ function NewDraft() {
                     <div>
                         <h2 href='#'>Time Ambar</h2>
                         <button onClick={() => copiarLink('Time Ambar')}>
-
+                        Copiar Link
                         </button>
                     </div>
                     <div>
                         <h2>Time Safira</h2>
                         <button onClick={() => copiarLink('Time Safira')}>
-
+                        Copiar Link
                         </button>
                     </div>
                     <div>
                         <h2>Espectador</h2>
                         <button onClick={() => copiarLink('Espectador')}>
-
+                        Copiar Link
                         </button>
+                    </div>
+                    <div>
+                    <Link to="/">
+                    <button>Voltar</button>
+                    </Link>
                     </div>
                 </div>
             </header>

@@ -12,6 +12,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 100vh;
 }
 
 button {
@@ -28,4 +29,66 @@ button {
 .App img {
   background-color: transparent; 
   margin-bottom: 180px;
+}
+
+.toggle-button {
+  background-color: red;
+}
+
+.icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-button img {
+  width: 95px;
+  height: 95px;
+}
+
+.selected-heroes-box-left {
+  display: flex;
+  position: fixed;
+  top: 0; /* Align to the top */
+  left: 0; /* Stick to the left */
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 20px; /* Space between the boxes */
+  margin-left: 30px;
+  
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.selected-heroes-box-right {
+  display: flex;
+  position: fixed;
+  top: 0; /* Align to the top */
+  right: 0; /* Stick to the left */
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 20px; /* Space between the boxes */
+  margin-left: 30px;
+  
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.selected-hero img{
+  width: 140px;
+  height: 140px;
+  margin: 5px;
 }
